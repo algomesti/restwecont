@@ -20,6 +20,7 @@ class InvoiceDAO extends Conection
         $invoice->bindParam(':invoiceId', $invoiceId, \PDO::PARAM_INT);
         $invoice->bindParam(':userId', $userId, \PDO::PARAM_INT);
         $invoice->execute();
+
         return ($invoice->fetchAll(\PDO::FETCH_ASSOC))[0] ?? [];
     }
 
@@ -35,6 +36,7 @@ class InvoiceDAO extends Conection
         $invoice->bindParam(':limit', $limit, \PDO::PARAM_INT);
         $invoice->bindParam(':offset', $offset, \PDO::PARAM_INT);
         $invoice->execute();
+
         return $invoice->fetchAll(\PDO::FETCH_ASSOC);
     }
 

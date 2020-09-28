@@ -14,10 +14,8 @@ services:
       - ./src:/var/www/html/restwecont
     depends_on:
       - mysql
-      - redis
     links:
       - mysql
-      - redis
 
   mysql:
     container_name: restwecont_mysql
@@ -29,16 +27,6 @@ services:
       - /docker/mysql/data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
-
-  redis:
-    container_name: restwecont_redis
-    image: redis
-    restart: always
-    ports:
-      - "6379:6379"
-    volumes:
-      - /docker/redis:/data
-    command: redis-server --appendonly yes
 
   phpmyadmin:
     container_name: restwecont_phpmyadmin
