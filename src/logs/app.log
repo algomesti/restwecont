@@ -1,0 +1,22 @@
+[2020-09-24 22:25:28] restwecont.DEBUG: Entra endpoint App\Controllers\CepController::get   {"cep":"80030-430"} {"uid":"f727de8"}
+[2020-09-24 22:25:28] restwecont.INFO: Entrou no model App\Models\CepModel::get ["80030-430"] {"uid":"f55e9b0"}
+[2020-09-24 22:25:28] restwecont.INFO: Pegou do Endpoint App\Models\CepModel::get ["80030430"] {"uid":"99e7e0e"}
+[2020-09-24 22:25:28] restwecont.INFO: Saiu no model App\Models\CepModel::get ["80030430"] {"uid":"2ac1153"}
+[2020-09-24 22:25:28] restwecont.DEBUG: Retornou válido  App\Controllers\CepController::get   {"cep":"80030-430"} {"uid":"af1b1a8"}
+[2020-09-24 22:25:28] restwecont.DEBUG: Sai endpoint App\Controllers\CepController::get   {"cep":"80030-430"} {"uid":"798acab"}
+[2020-09-25 02:21:32] restwecont.DEBUG: Entra endpoint App\Controllers\CepController::get   {"cep":"20780030"} {"uid":"8122a36"}
+[2020-09-25 02:21:32] restwecont.INFO: Entrou no model App\Models\CepModel::get ["20780030"] {"uid":"27d6143"}
+[2020-09-25 02:21:33] restwecont.INFO: Pegou do Endpoint App\Models\CepModel::get ["20780030"] {"uid":"e6bb42b"}
+[2020-09-25 02:21:33] restwecont.INFO: Saiu no model App\Models\CepModel::get ["20780030"] {"uid":"02ad22b"}
+[2020-09-25 02:21:33] restwecont.DEBUG: Retornou válido  App\Controllers\CepController::get   {"cep":"20780030"} {"uid":"990d5ba"}
+[2020-09-25 02:21:33] restwecont.DEBUG: Sai endpoint App\Controllers\CepController::get   {"cep":"20780030"} {"uid":"def755d"}
+[2020-09-26 00:20:42] restwecont.DEBUG: Entra endpoint App\Controllers\CepController::get   {"cep":"20780030"} {"uid":"5065748"}
+[2020-09-26 00:20:42] restwecont.INFO: Entrou no model App\Models\CepModel::get ["20780030"] {"uid":"9507e08"}
+[2020-09-26 00:20:42] restwecont.INFO: Pegou do Endpoint App\Models\CepModel::get ["20780030"] {"uid":"d3c5ed1"}
+[2020-09-26 00:20:42] restwecont.DEBUG: Retornou null  App\Controllers\CepController::get   {"cep":"20780030"} {"uid":"36b158e"}
+[2020-09-26 00:20:42] restwecont.DEBUG: Sai endpoint App\Controllers\CepController::get   {"cep":"20780030"} {"uid":"5ac5ac4"}
+[2020-09-26 00:20:43] restwecont.DEBUG: Entra endpoint App\Controllers\CepController::get   {"cep":"20780030"} {"uid":"5731a30"}
+[2020-09-26 00:20:43] restwecont.INFO: Entrou no model App\Models\CepModel::get ["20780030"] {"uid":"75d8c2b"}
+[2020-09-26 00:20:43] restwecont.INFO: Pegou do Endpoint App\Models\CepModel::get ["20780030"] {"uid":"0185bcd"}
+[2020-09-26 00:20:43] restwecont.DEBUG: Retornou null  App\Controllers\CepController::get   {"cep":"20780030"} {"uid":"1138d0c"}
+[2020-09-26 00:20:43] restwecont.DEBUG: Sai endpoint App\Controllers\CepController::get   {"cep":"20780030"} {"uid":"6ec0a64"}

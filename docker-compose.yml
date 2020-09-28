@@ -1,0 +1,52 @@
+version: "2"
+services:
+
+  webserver:
+    container_name: restwecont_webserver
+    build:
+        context: docker/php
+        dockerfile: Dockerfile
+    ports:
+        - "8001:80"
+    volumes:
+      - ./docker/mysql/db:/var/www/html/db
+      - ./docker/mysql/script:/var/www/html/script
+      - ./src:/var/www/html/restwecont
+    depends_on:
+      - mysql
+      - redis
+    links:
+      - mysql
+      - redis
+
+  mysql:
+    container_name: restwecont_mysql
+    image: mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - /docker/mysql/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  redis:
+    container_name: restwecont_redis
+    image: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - /docker/redis:/data
+    command: redis-server --appendonly yes
+
+  phpmyadmin:
+    container_name: restwecont_phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - PMA_HOST=mysql
+    ports:
+      - "8002:80"
+    volumes:
+      - ./docker/php/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
