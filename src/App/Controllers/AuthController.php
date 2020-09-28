@@ -8,9 +8,6 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 use Firebase\JWT\JWT;
 
-//use App\DAO\TokensDAO;
-//use App\Models\TokenModel;
-
 final class AuthController extends Controller
 {
     public function login(Request $request, Response $response, array $args): Response
